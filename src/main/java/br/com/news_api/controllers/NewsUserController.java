@@ -40,6 +40,6 @@ public class NewsUserController {
     @Transactional
     public ResponseEntity<String> delete(@PathVariable Long id){
         newsUserService.delete(id);
-        return ResponseEntity.ok().body("Excluido com sucesso");
+        return ResponseEntity.ok().body("Successfully deleted record");
     }
 }
