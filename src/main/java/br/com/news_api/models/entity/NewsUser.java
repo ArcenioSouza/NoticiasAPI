@@ -7,8 +7,8 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity(name = "NewsUser")
-@Table(name = "news_user")
+@Entity(name = "NewsAdmin")
+@Table(name = "news_admin")
 @Getter
 @Setter
 @NoArgsConstructor
