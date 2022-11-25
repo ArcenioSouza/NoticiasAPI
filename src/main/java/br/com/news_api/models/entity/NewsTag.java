@@ -31,6 +31,12 @@ public class NewsTag {
         this.date = newsTagRequestDto.date();
     }
 
+    public NewsTag(NewsTag newsTag) {
+        this.id = newsTag.getId();
+        this.parameter = newsTag.getParameter();
+        this.date = newsTag.getDate();
+    }
+
     public void updateNewsUser(NewsTagUpdateRequestDto newsTagUpdateRequestDto) {
         this.parameter = newsTagUpdateRequestDto.parameter() != null ? newsTagUpdateRequestDto.parameter() : this.parameter;
         this.date = newsTagUpdateRequestDto.date() != null ? newsTagUpdateRequestDto.date() : this.date;
